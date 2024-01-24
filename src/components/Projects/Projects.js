@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import leaf from "../../Assets/Projects/kanbannnn.png";
+import editor from "../../Assets/Projects/aws.jpg";
+import chatify from "../../Assets/Projects/youtube.png";
+import bitsOfCode from "../../Assets/Projects/Food.jpg";
 
 function Projects() {
   return (
@@ -25,10 +23,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="YouTube Clone"
+              description=" Developed a full-fledged YouTube clone using React.js, Tailwind CSS, Redux and bundlers like webpack and parcel.Leveraging the YouTube API, I successfully replicated key functionalities of the platform(trending videos, usercomment section and search bar). Employed Docker for containerization .Utilized a configuration-driven UI "
+              ghLink="https://github.com/thattallman/YouTube_Clone/tree/main"
+              demoLink="https://you-tube-clone-wheat-beta.vercel.app/watch?v=fW1QcEAy4rg"
             />
           </Col>
 
@@ -36,10 +34,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Food and Movies Reviews"
+              description=" Developed a feature-rich project utilizing Swiggy API integration and React.js,employing Java Spring Boot for thebackend for REST API’s and MongoDB for database. Employed Docker for containerization. Utilized aconfiguration-driven UI. Crafted comprehensive SRS report with UML diagrams,modelling, and use cases,demonstrated expertise inrequirements analysis and modelling"
+              ghLink="https://github.com/thattallman/FoodReviews"
+              demoLink="https://github.com/thattallman/FoodReviews"
             />
           </Col>
 
@@ -47,10 +45,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="AWS Project"
+              description="Deployed and hosted a highly-available application using EC2, RDS, Route 53, IAM and VPC. Automateddeployment pipeline with Jenkins, leveraging GitHub web hooks to trigger seamless deployments to Apache wheneverchanges were pushed to the Git repository"
+              ghLink="https://github.com/thattallman/awsTesting"
+              demoLink="http://54.174.192.206:3000/"              
             />
           </Col>
 
@@ -58,35 +56,13 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Kanban Board"
+              description=" managing and categorizing work at individual and organizational level "
+              ghLink="https://github.com/thattallman/KanbanBoard?tab=readme-ov-file"
+              demoLink="https://kanban-board-blush-mu.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
